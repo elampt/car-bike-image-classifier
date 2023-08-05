@@ -2,3 +2,4 @@ fastai
 gradio
 pillow
 torch
+pathlib
