@@ -4,6 +4,10 @@ __all__ = ['learn','classify_image','categories','image','label','examples','int
 from fastai.vision.all import *
 import gradio as gr
 
+import pathlib
+plt = platform.system()
+if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
+
 learn = load_learner('model.pkl')
 
 
